@@ -1,11 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'src/homepage.css' %}">
+    <title>Sweet Alchemy</title>
 </head>
 <body>
-    <p>just a test... all good!</p>
+    <header>
+        </nav>
+            <div class="navigation">
+                <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="img">
+                <h2 class="text-navigation">Sweet Alchemy</h2>
+                <div class="options">
+                    <a href="">Inicio</a>
+                    <a href="">Nosotros</a>
+                    <a href="">Repostería tradicional</a>
+                    <a href="">Más vendidos</a>
+                    <a href="">De temporada</a>
+                    <a href="">Productos</a>
+                    <a href="">Haz tu pedido</a>
+                    <a href="">Carrito</a>      
+                </div>
+            </div>
+        <nav> 
+    </header>
+    <main>
+        <section class="banner">
+            <img src="{% static 'img/banner.png' %}" alt="banner">
+        </section>
+        <section class="post-banner">
+            <h3 class="post-banner-text">Repostería artesanal, hecha con amor, dedicación y un poco de magia.</h3>
+            <div class="post-banner-uris">
+                <a href="" target="_blank" class="uri-see-products">Ver Productos</a>
+                <a href="" target="_blank" class="uri-see-order">Hacer Pedido</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
