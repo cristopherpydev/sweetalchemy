@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'src/about_us.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Sweet Alchemy - Nosotros</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="img">
+                <h2 class="text-navigation">Sweet Alchemy</h2>
+                <div class="options">
+                    <a href="/">Inicio</a>
+                    <a href="">Nosotros</a>
+                    <a href="">Repostería tradicional</a>
+                    <a href="">Más vendidos</a>
+                    <a href="">De temporada</a>
+                    <a href="">Productos</a>
+                    <a href="">Haz tu pedido</a>
+                    <a href="">Carrito</a>      
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-header">
+            <div class="main-header-wrapper">
+                <div class="row-1">
+                    <p class="star">✧</p>
+                    <h2 class="h2-header">¿Quiénes Somos?</h2>
+                    <p class="star">✧</p>
+                </div>
+                <p class="subtitle">✧ Un toque de magia en cada bocado ✧</p>
+            </div>
+        </div>
+    <section class="section-1">
+        <div class="column-text">
+            <h2>Nuestra Historia</h1>
+            <p>Sweet Alchemy nació de un deseo; de esos que pides a las estrellas porque no sabes muy bien si podrá llegar a cumplirse...<br><br>
+            Cuando era pequeña, mi abuela llenaba la casa de aromas dulces y momentos cálidos. Era ella quien preparaba postres y dulces que luego vendía, y yo la observaba desde abajo, apenas alcanzando a ver la encimera, pero completamente fascinada por lo que hacía. En cada movimiento había algo mágico, algo que iba más allá de mezclar ingredientes: era la forma en que transformaba lo sencillo en algo capaz de hacer feliz a los demás.<br><br>
+            Fue entonces cuando nació en mi un sueño silencioso: querer ser como ella. Querer crear, compartir y regalar momentos de felicidad a través de la repostería. </p>
+        </div>
+        <img src="{% static 'img/ronnieabuela.png' %}" alt="">
+    </section>
+    <section class="section-2">
+        <div class="column-text-2">
+            <p>El camino a seguir no fue uno inmediato.  Pasó el tiempo, la vida siguió su curso, y aquel deseo de una aniñada versión de mí quedó guardado, esperando su momento. Hasta que un día estuve lista para escucharlo. Tras mucho esfuerzo, finalmente pude formarme en repostería y dar el paso con el que solo había soñado. 
+            <br><br>Hoy Sweet Alchemy es la forma que tengo de honrar ese origen; ese deseo de hacer magia dulce, de abrazar a esa niña que miraba con ilusión desde la cocina de su abuelita, y de convertir cada creación en algo más que un postre: en un recuerdo, en una emoción, en un pequeño instante de magia, un pequeño suspiro de alegría.</p>
+        </div>
+        <img src="{% static 'img/ronnie.png' %}" alt="">
+    </section>
+    <section class="section-3">
+        <h2>Porque para mí, la repostería nunca ha sido solo hacer dulces...</h2>
+        <h2>Es transformar ingredientes en la clave para la felicidad.</h2>
+        <img src="{% static 'img/postre.jpg' %}" alt="">
+    </section>
+    </main>
+    <footer>
+        <div class="three-columns-wrapper">
+            <div class="footer-column-1">
+                <div class="footer-column-1-header">
+                    <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="">
+                    <h2>Sweet Alchemy</h2>
+                </div>
+                <div class="footer-column-1-content">
+                    <h3>Un toque de magia en cada bocado</h3>
+                    <p>Repostería artesanal hecha con amor, dedicación y magia. Todo elaborado a mano con ingredientes naturales.</p>
+                </div>
+            </div>
+            <div class="footer-column-2">
+                <h2>Contacto</h2>
+                <div class="row-1">
+                    <i class="fa fa-location-arrow"></i>
+                    <p>Calle de la Dulzura, 123 38010, Santa Cruz de Tenerife, España</p>
+                </div>
+                <div class="row-2">
+                    <i class="fa fa-phone"></i>
+                    <p>+34 692 66 96 80</p>
+                </div>
+                <div class="row-3">
+                    <i class="fa fa-envelope"></i>
+                    <p>sweetalchemybakin@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-column-3">
+                <h2>Horarios</h2>
+                <p class="footer-column-3-first">Lunes a Viernes: 8:00 - 20:00</p>
+                <p>Sábados: 9:00 - 21:00</p>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

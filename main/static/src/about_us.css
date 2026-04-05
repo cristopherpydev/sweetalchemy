@@ -1,0 +1,234 @@
+/*FONTS used for the landing page */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Cinzel+Decorative:wght@400;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Navigation section and build up */
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navigation{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 1em;
+}
+.navigation img{
+    height: 69px;
+    width: 69px;
+}
+
+.navigation a{
+    text-decoration: none;
+    padding: 20px;
+}
+.navigation a:hover{
+    background-color: bisque;
+}
+.text-navigation {
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Main header */
+
+.main-header{
+    width: 100%;
+    background-color: #9986a6;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-header p{
+    font-family: 'Andada Pro', serif;
+    color: #F2E6D0;
+    font-style: italic;
+}
+.row-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-1 h2{
+    font-family: 'Andada Pro', serif;
+    font-size: 64px;
+    color: #F2E6D0;
+    font-style: italic;
+}
+.star{
+    color: #F2E6D0;
+    font-size: 76px;
+}
+.main-header-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtitle{
+    font-size: 30px;
+    margin-top: -70px;
+}
+
+/*Section 1 */
+
+.section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 20px;
+    
+}
+.column-text{
+    width: 600px;
+    padding: 0px 20px 0px 0px;
+    font-family: 'Andada Pro', serif;
+
+}
+.section-1 img{
+    width: 314px;
+    height: 274px;
+}
+.section-1 h2{
+    font-size: 22px;
+    font-family: 'Andada Pro', serif;
+    color: #534573;
+    font-weight: bold;
+}
+.section-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    margin-top: 20px;
+    
+}
+
+
+.section-2 img{
+    width: 314px;
+    height: 274px;
+}
+.column-text-2{
+    width: 600px;
+    font-family: 'Andada Pro', serif;
+    padding: 0px 0px 20px 20px;
+    text-align: right;
+
+}
+/* SECTION 3*/
+
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-3 h2{
+    font-size: 32px;
+    font-family: 'Andada Pro', serif;
+    color: #534573;
+    font-style: italic;
+}
+.section-3 img{
+    width: 628px;
+    height: 418px;
+    margin-bottom: 40px;
+}
+
+/*Footer*/
+footer{
+    background-color: #F2E6D0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.three-columns-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;  
+
+}
+.three-columns-wrapper p{
+    font-style: italic;
+    font-weight: bold;
+}
+.three-columns-wrapper > div {
+    flex: 1;             
+    padding: 20px;
+}
+.three-columns-wrapper p{
+    color: black;
+}
+.three-columns-wrapper h2{
+    color: #6C548C;
+    font-family: 'Andada Pro', serif;
+    font-size: 32px;
+    font-style: italic;
+}
+.footer-column-1 img{
+    width: 120px;
+    height: 120px;
+    
+}
+
+.footer-column-1-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.footer-column-1-content h3{
+    font-style: italic;
+    font-weight: bold;
+
+}
+.row-1{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-2{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-3{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-column-2 i{
+    font-size:18px;
+}
+
+.footer-column-3-first{
+    margin-top: 42px;
+}
