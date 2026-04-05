@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'src/homepage.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <title>Sweet Alchemy</title>
 </head>
 <body>
@@ -37,6 +38,92 @@
                 <a href="" target="_blank" class="uri-see-order">Hacer Pedido</a>
             </div>
         </section>
+        <section class="three-icons-section">
+            <div class="icons">
+                <div class="icon-1-section">
+                    <div class="icon-heart">
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+                    <h3>100% Artesanal</h3>
+                    <p>Hecho a mano con recetas tradicionales</p>
+                </div>
+                <div class="icon-2-section">
+                    <div class="icon-star">
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h3>Ingredientes Premium</h3>
+                    <p>Solo con ingredientes de primeras calidades</p>
+                </div>
+                <div class="icon-3-section">
+                    <div class="icon-clock">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <h3>Recién Horneado</h3>
+                    <p>Productos frescos elaborados a diario</p>
+                </div>
+            </div>
+        </section>
+        <section class="specs">
+            <h1>Nuestras Especialidades</h1>
+            <div class="options-list">
+                <div class="option-best-seller">
+                <img src="{% static 'img/bestseller.jpg' %}" alt="">
+                    <div class="card-content">
+                        <h2>Más vendidos</h2>
+                        <p>Nuestros clásicos favoritos.</p>
+                    </div>
+                </div>
+                <div class="option-traditional">
+                    <img src="{% static 'img/traditional.jpg' %}" alt=""></img>
+                    <div class="card-content">
+                      <h2>Repostería Tradicional</h2>
+                      <p>Recetas de toda la vida.</p>
+                    </div>
+                </div>
+                <div class="option-seasonal">
+                <img src="{% static 'img/seasonal.jpg' %}" alt="">
+                    <div class="card-content">
+                        <h2>De Temporada</h2>
+                        <p>Para endulzar cada momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="three-columns-wrapper">
+                <div class="footer-column-1">
+                    <div class="footer-column-1-header">
+                        <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="">
+                        <h2>Sweet Alchemy</h2>
+                    </div>
+                    <div class="footer-column-1-content">
+                        <h3>Un toque de magia en cada bocado</h3>
+                        <p>Repostería artesanal hecha con amor, dedicación y magia. Todo elaborado a mano con ingredientes naturales.</p>
+                    </div>
+                </div>
+                <div class="footer-column-2">
+                    <h2>Contacto</h2>
+                    <div class="row-1">
+                        <i class="fa fa-location-arrow"></i>
+                        <p>Calle de la Dulzura, 123438010, Santa Cruz de Tenerife, España</p>
+                    </div>
+                    <div class="row-2">
+                        <i class="fa fa-phone"></i>
+                        <p>+34 692 66 96 80</p>
+                    </div>
+                    <div class="row-3">
+                        <i class="fa fa-envelope"></i>
+                        <p>sweetalchemybakin@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-column-3">
+                    <h2>Horarios</h2>
+                    <p class="footer-column-3-first">Lunes a Viernes: 8:00 - 20:00</p>
+                    <p>Sábados: 9:00 - 21:00</p>
+                </div>
+            </div>
+            
+        </footer>
     </main>
 </body>
 </html>
