@@ -1,0 +1,312 @@
+/*FONTS used for the landing page */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Navigation section and build up */
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navigation{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    gap: 20px;
+    position: fixed;
+    padding: 1em;
+}
+.navigation img{
+    height: 69px;
+    width: 69px;
+}
+
+.navigation a{
+    text-decoration: none;
+    padding: 20px;
+}
+.navigation a:hover{
+    background-color: bisque;
+}
+.text-navigation {
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*SECTION 1: Banner */
+
+.banner img{
+    width: 100%;
+}
+
+/*SECTION 2: Post-banner CTA */
+
+.post-banner{
+    background-color:#9986a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-banner-text{
+    font-family: 'Andada Pro', serif;
+    color: #F3F1ED;
+    font-style: italic;
+    font-size: 32px;
+}
+.post-banner-uris{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+}
+.uri-see-products{
+    text-align: center;
+    width: 160px;
+    height: 20px;
+
+    background-color: #534573;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f2e6d0;
+    border: 2px solid #f2e6d0;
+    border-radius:10px;
+}
+
+.uri-see-order{
+    text-align: center;
+    width: 160px;
+    height: 20px;
+    background-color: #f2e6d0;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #534573;
+    border: 2px solid  #534573;
+    border-radius:10px;
+}
+
+/*SECTION 3 - THREE ICON */
+
+.three-icons-section{
+
+    background-color: #6c548c;
+    display: flex;
+    align-items: center;
+}
+.three-icons-section h3,p{
+    color: #f2e6d0;
+    font-family: 'Andada Pro', serif;
+}
+.three-icons-section p{
+    opacity: 0.7;
+    width: 100px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+            
+}
+
+.icon-heart {
+    margin-top: 40px;
+    width: 100px;                 
+    height: 100px;               
+    border-radius: 50%;           
+    background-color: #F2E6D0;   
+    display: flex;               
+    align-items: center;         
+    justify-content: center;      
+    font-size: 2rem;             
+    color: #6c548c;               
+}
+
+.icon-star {
+    margin-top: 40px;
+    width: 100px;                 
+    height: 100px;               
+    border-radius: 50%;           
+    background-color: #F2E6D0;   
+    display: flex;               
+    align-items: center;         
+    justify-content: center;      
+    font-size: 2rem;             
+    color: #6c548c;               
+}
+
+.icon-clock {
+    margin-top: 40px;
+    width: 100px;                 
+    height: 100px;               
+    border-radius: 50%;           
+    background-color: #F2E6D0;   
+    display: flex;               
+    align-items: center;         
+    justify-content: center;      
+    font-size: 2rem;             
+    color: #6c548c;               
+}
+.icon-1-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-2-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.icon-3-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/*SECTION 4 - OPTIONS URIS*/
+.specs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9986A6;
+    
+}
+.specs h1{
+    font-size: 42px;
+    color: #F3F1ED;
+    font-style: italic;
+    font-family: 'Andada Pro', serif;
+}
+.options-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;  
+}
+.options-list h2 p{
+    color: #F2E6D0;
+    font-family: 'Andada Pro', serif;
+
+}
+
+.options-list h2{
+    font-style: italic;
+}
+
+.option-best-seller,
+.option-traditional,
+.option-seasonal {
+    width: 426px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.option-best-seller img,
+.option-traditional img,
+.option-seasonal img {
+    width: 100%;
+    height: 200px;      
+    object-fit: cover;
+}
+
+.card-content {
+    background-color: #534573;
+    color: #f2e6d0;
+    padding: 15px;
+}
+
+/*Footer*/
+footer{
+    background-color: #F2E6D0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.three-columns-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;  
+
+}
+.three-columns-wrapper p{
+    font-style: italic;
+    font-weight: bold;
+}
+.three-columns-wrapper > div {
+    flex: 1;             
+    padding: 20px;
+}
+.three-columns-wrapper p{
+    color: black;
+}
+.three-columns-wrapper h2{
+    color: #6C548C;
+    font-family: 'Andada Pro', serif;
+    font-size: 32px;
+    font-style: italic;
+}
+.footer-column-1 img{
+    width: 120px;
+    height: 120px;
+    
+}
+
+.footer-column-1-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.footer-column-1-content h3{
+    font-style: italic;
+    font-weight: bold;
+
+}
+.row-1{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-2{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-3{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-column-2 i{
+    font-size:18px;
+}
+.footer-column-3-first{
+    margin-top: 42px;
+}
