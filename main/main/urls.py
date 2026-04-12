@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage),
     path('nosotros/', views.about_us),
+    path('reposteria-tradicional/', views.traditional_baking),
 ]

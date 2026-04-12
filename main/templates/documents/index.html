@@ -1,129 +1,180 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'src/homepage.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <title>Sweet Alchemy</title>
+
+    <link rel="stylesheet" href="{% static 'src/homepage.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        </nav>
-            <div class="navigation">
-                <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="img">
-                <h2 class="text-navigation">Sweet Alchemy</h2>
-                <div class="options">
-                    <a href="">Inicio</a>
-                    <a href="nosotros/">Nosotros</a>
-                    <a href="">Repostería tradicional</a>
-                    <a href="">Más vendidos</a>
-                    <a href="">De temporada</a>
-                    <a href="">Productos</a>
-                    <a href="">Haz tu pedido</a>
-                    <a href="">Carrito</a>      
-                </div>
+
+    <nav class="navbar navbar-expand-lg custom-navbar shadow-sm fixed-top">
+        <div class="container-fluid px-3 px-lg-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="Sweet Alchemy" class="brand-logo">
+                <span class="text-navigation">Sweet Alchemy</span>
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link custom-nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="nosotros/">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="reposteria-tradicional/">Repostería tradicional</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Más vendidos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">De temporada</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Haz tu pedido</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Carrito</a></li>
+                </ul>
             </div>
-        <nav> 
-    </header>
-    <main>
-        <section class="banner">
-            <img src="{% static 'img/banner.png' %}" alt="banner">
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="banner-section">
+            <img src="{% static 'img/banner.png' %}" alt="Banner principal" class="img-fluid w-100 banner-image">
         </section>
-        <section class="post-banner">
-            <h3 class="post-banner-text">Repostería artesanal, hecha con amor, dedicación y un poco de magia.</h3>
-            <div class="post-banner-uris">
-                <a href="" target="_blank" class="uri-see-products">Ver Productos</a>
-                <a href="" target="_blank" class="uri-see-order">Hacer Pedido</a>
-            </div>
-        </section>
-        <section class="three-icons-section">
-            <div class="icons">
-                <div class="icon-1-section">
-                    <div class="icon-heart">
-                        <i class="fa fa-heart-o"></i>
-                    </div>
-                    <h3>100% Artesanal</h3>
-                    <p>Hecho a mano con recetas tradicionales</p>
-                </div>
-                <div class="icon-2-section">
-                    <div class="icon-star">
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <h3>Ingredientes Premium</h3>
-                    <p>Solo con ingredientes de primeras calidades</p>
-                </div>
-                <div class="icon-3-section">
-                    <div class="icon-clock">
-                        <i class="fa fa-clock-o"></i>
-                    </div>
-                    <h3>Recién Horneado</h3>
-                    <p>Productos frescos elaborados a diario</p>
+
+        <section class="post-banner-section py-5">
+            <div class="container text-center">
+                <h3 class="post-banner-text mb-4">
+                    Repostería artesanal, hecha con amor, dedicación y un poco de magia.
+                </h3>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="#" class="btn btn-lg custom-btn-products">Ver Productos</a>
+                    <a href="#" class="btn btn-lg custom-btn-order">Hacer Pedido</a>
                 </div>
             </div>
         </section>
-        <section class="specs">
-            <h1>Nuestras Especialidades</h1>
-            <div class="options-list">
-                <div class="option-best-seller">
-                <img src="{% static 'img/bestseller.jpg' %}" alt="">
-                    <div class="card-content">
-                        <h2>Más vendidos</h2>
-                        <p>Nuestros clásicos favoritos.</p>
+
+        <section class="features-section py-5">
+            <div class="container">
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <div class="feature-item h-100">
+                            <div class="feature-icon">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <h3>100% Artesanal</h3>
+                            <p>Hecho a mano con recetas tradicionales</p>
+                        </div>
                     </div>
-                </div>
-                <div class="option-traditional">
-                    <img src="{% static 'img/traditional.jpg' %}" alt=""></img>
-                    <div class="card-content">
-                      <h2>Repostería Tradicional</h2>
-                      <p>Recetas de toda la vida.</p>
+
+                    <div class="col-12 col-md-4">
+                        <div class="feature-item h-100">
+                            <div class="feature-icon">
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h3>Ingredientes Premium</h3>
+                            <p>Solo con ingredientes de primeras calidades</p>
+                        </div>
                     </div>
-                </div>
-                <div class="option-seasonal">
-                <img src="{% static 'img/seasonal.jpg' %}" alt="">
-                    <div class="card-content">
-                        <h2>De Temporada</h2>
-                        <p>Para endulzar cada momento.</p>
+
+                    <div class="col-12 col-md-4">
+                        <div class="feature-item h-100">
+                            <div class="feature-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h3>Recién Horneado</h3>
+                            <p>Productos frescos elaborados a diario</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="three-columns-wrapper">
-                <div class="footer-column-1">
-                    <div class="footer-column-1-header">
-                        <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="">
-                        <h2>Sweet Alchemy</h2>
+
+        <section class="specialties-section py-5">
+            <div class="container">
+                <h1 class="section-title text-center mb-5">Nuestras Especialidades</h1>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card specialty-card h-100">
+                            <img src="{% static 'img/bestseller.jpg' %}" class="card-img-top specialty-img" alt="Más vendidos">
+                            <div class="card-body specialty-card-body">
+                                <h2 class="card-title specialty-title">Más vendidos</h2>
+                                <p class="card-text specialty-text">Nuestros clásicos favoritos.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-column-1-content">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card specialty-card h-100">
+                            <img src="{% static 'img/traditional.jpg' %}" class="card-img-top specialty-img" alt="Repostería Tradicional">
+                            <div class="card-body specialty-card-body">
+                                <h2 class="card-title specialty-title">Repostería Tradicional</h2>
+                                <p class="card-text specialty-text">Recetas de toda la vida.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card specialty-card h-100">
+                            <img src="{% static 'img/seasonal.jpg' %}" class="card-img-top specialty-img" alt="De Temporada">
+                            <div class="card-body specialty-card-body">
+                                <h2 class="card-title specialty-title">De Temporada</h2>
+                                <p class="card-text specialty-text">Para endulzar cada momento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-brand d-flex align-items-center gap-3 mb-3">
+                        <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="Sweet Alchemy" class="footer-logo">
+                        <h2 class="mb-0">Sweet Alchemy</h2>
+                    </div>
+
+                    <div class="footer-description">
                         <h3>Un toque de magia en cada bocado</h3>
                         <p>Repostería artesanal hecha con amor, dedicación y magia. Todo elaborado a mano con ingredientes naturales.</p>
                     </div>
                 </div>
-                <div class="footer-column-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
                     <h2>Contacto</h2>
-                    <div class="row-1">
+
+                    <div class="footer-contact-item">
                         <i class="fa fa-location-arrow"></i>
                         <p>Calle de la Dulzura, 123 38010, Santa Cruz de Tenerife, España</p>
                     </div>
-                    <div class="row-2">
+
+                    <div class="footer-contact-item">
                         <i class="fa fa-phone"></i>
                         <p>+34 692 66 96 80</p>
                     </div>
-                    <div class="row-3">
+
+                    <div class="footer-contact-item">
                         <i class="fa fa-envelope"></i>
                         <p>sweetalchemybakin@gmail.com</p>
                     </div>
                 </div>
-                <div class="footer-column-3">
+
+                <div class="col-12 col-md-6 col-lg-4">
                     <h2>Horarios</h2>
-                    <p class="footer-column-3-first">Lunes a Viernes: 8:00 - 20:00</p>
+                    <p class="footer-hours-first">Lunes a Viernes: 8:00 - 20:00</p>
                     <p>Sábados: 9:00 - 21:00</p>
                 </div>
             </div>
-            
-        </footer>
-    </main>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
