@@ -1,312 +1,257 @@
-/*FONTS used for the landing page */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
+:root{
+    --cream: #F2E6D0;
+    --cream-soft: #F3F1ED;
+    --purple-dark: #534573;
+    --purple-main: #6C548C;
+    --purple-light: #9986A6;
+    --shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
 body{
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    padding-top: 92px;
 }
 
-/*Navigation section and build up */
-
-section{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.navigation{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    width: 100%;
-    gap: 20px;
-    position: fixed;
-    padding: 1em;
-}
-.navigation img{
-    height: 69px;
-    width: 69px;
-}
-
-.navigation a{
+a{
     text-decoration: none;
-    padding: 20px;
 }
-.navigation a:hover{
-    background-color: bisque;
+
+.main-content{
+    overflow-x: hidden;
 }
-.text-navigation {
+
+.custom-navbar{
+    background-color: #F2F2F2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.brand-logo{
+    width: 69px;
+    height: 69px;
+    object-fit: cover;
+}
+
+.text-navigation{
     font-family: 'Cinzel Decorative', serif;
     text-shadow: 1px 1px 2px black;
+    color: #000;
+    font-size: 1.4rem;
 }
 
-/*SECTION 1: Banner */
-
-.banner img{
-    width: 100%;
+.custom-nav-link{
+    color: #000;
+    padding: .75rem 1rem !important;
+    border-radius: .5rem;
+    transition: background-color .2s ease, color .2s ease;
 }
 
-/*SECTION 2: Post-banner CTA */
+.custom-nav-link:hover,
+.custom-nav-link:focus{
+    background-color: bisque;
+    color: #000;
+}
 
-.post-banner{
-    background-color:#9986a6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.custom-toggler{
+    border-color: rgba(0,0,0,.15);
+}
+
+.banner-section img{
+    display: block;
+}
+
+.banner-image{
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.post-banner-section{
+    background-color: var(--purple-light);
 }
 
 .post-banner-text{
     font-family: 'Andada Pro', serif;
-    color: #F3F1ED;
+    color: var(--cream-soft);
     font-style: italic;
-    font-size: 32px;
-}
-.post-banner-uris{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 20px;
-}
-.uri-see-products{
-    text-align: center;
-    width: 160px;
-    height: 20px;
-
-    background-color: #534573;
-    padding: 30px;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #f2e6d0;
-    border: 2px solid #f2e6d0;
-    border-radius:10px;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.4;
 }
 
-.uri-see-order{
-    text-align: center;
-    width: 160px;
-    height: 20px;
-    background-color: #f2e6d0;
-    padding: 30px;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    color: #534573;
-    border: 2px solid  #534573;
-    border-radius:10px;
-}
-
-/*SECTION 3 - THREE ICON */
-
-.three-icons-section{
-
-    background-color: #6c548c;
-    display: flex;
-    align-items: center;
-}
-.three-icons-section h3,p{
-    color: #f2e6d0;
-    font-family: 'Andada Pro', serif;
-}
-.three-icons-section p{
-    opacity: 0.7;
-    width: 100px;
-    text-align: center;
-}
-
-.icons{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-            
-}
-
-.icon-heart {
-    margin-top: 40px;
-    width: 100px;                 
-    height: 100px;               
-    border-radius: 50%;           
-    background-color: #F2E6D0;   
-    display: flex;               
-    align-items: center;         
-    justify-content: center;      
-    font-size: 2rem;             
-    color: #6c548c;               
-}
-
-.icon-star {
-    margin-top: 40px;
-    width: 100px;                 
-    height: 100px;               
-    border-radius: 50%;           
-    background-color: #F2E6D0;   
-    display: flex;               
-    align-items: center;         
-    justify-content: center;      
-    font-size: 2rem;             
-    color: #6c548c;               
-}
-
-.icon-clock {
-    margin-top: 40px;
-    width: 100px;                 
-    height: 100px;               
-    border-radius: 50%;           
-    background-color: #F2E6D0;   
-    display: flex;               
-    align-items: center;         
-    justify-content: center;      
-    font-size: 2rem;             
-    color: #6c548c;               
-}
-.icon-1-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.icon-2-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.icon-3-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
-/*SECTION 4 - OPTIONS URIS*/
-.specs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #9986A6;
-    
-}
-.specs h1{
-    font-size: 42px;
-    color: #F3F1ED;
-    font-style: italic;
-    font-family: 'Andada Pro', serif;
-}
-.options-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;  
-}
-.options-list h2 p{
-    color: #F2E6D0;
-    font-family: 'Andada Pro', serif;
-
-}
-
-.options-list h2{
-    font-style: italic;
-}
-
-.option-best-seller,
-.option-traditional,
-.option-seasonal {
-    width: 426px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; 
+.custom-btn-products,
+.custom-btn-order{
+    min-width: 220px;
+    font-size: 1.25rem;
+    font-weight: 700;
     border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 1rem 1.5rem;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.option-best-seller img,
-.option-traditional img,
-.option-seasonal img {
-    width: 100%;
-    height: 200px;      
+.custom-btn-products{
+    background-color: var(--purple-dark);
+    color: var(--cream);
+    border: 2px solid var(--cream);
+}
+
+.custom-btn-products:hover{
+    background-color: #46375f;
+    color: var(--cream);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.custom-btn-order{
+    background-color: var(--cream);
+    color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.custom-btn-order:hover{
+    background-color: #f7eedf;
+    color: var(--purple-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.features-section{
+    background-color: var(--purple-main);
+}
+
+.feature-item{
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.feature-item h3,
+.feature-item p{
+    font-family: 'Andada Pro', serif;
+    color: var(--cream);
+}
+
+.feature-item p{
+    opacity: .75;
+    max-width: 220px;
+    text-align: center;
+}
+
+.feature-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--purple-main);
+    margin-bottom: 1.25rem;
+}
+
+.specialties-section{
+    background-color: var(--purple-light);
+}
+
+.section-title{
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--cream-soft);
+    font-style: italic;
+    font-family: 'Andada Pro', serif;
+}
+
+.specialty-card{
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.specialty-img{
+    height: 220px;
     object-fit: cover;
 }
 
-.card-content {
-    background-color: #534573;
-    color: #f2e6d0;
-    padding: 15px;
+.specialty-card-body{
+    background-color: var(--purple-dark);
+    color: var(--cream);
 }
 
-/*Footer*/
-footer{
-    background-color: #F2E6D0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.three-columns-wrapper {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;  
-
-}
-.three-columns-wrapper p{
-    font-style: italic;
-    font-weight: bold;
-}
-.three-columns-wrapper > div {
-    flex: 1;             
-    padding: 20px;
-}
-.three-columns-wrapper p{
-    color: black;
-}
-.three-columns-wrapper h2{
-    color: #6C548C;
+.specialty-title{
     font-family: 'Andada Pro', serif;
-    font-size: 32px;
+    font-style: italic;
+    color: var(--cream);
+    font-size: 1.5rem;
+}
+
+.specialty-text{
+    color: var(--cream);
+    opacity: .95;
+    font-family: 'Andada Pro', serif;
+}
+
+.footer-section{
+    background-color: var(--cream);
+}
+
+.footer-section h2{
+    color: var(--purple-main);
+    font-family: 'Andada Pro', serif;
+    font-size: 2rem;
     font-style: italic;
 }
-.footer-column-1 img{
+
+.footer-section h3{
+    font-style: italic;
+    font-weight: 700;
+}
+
+.footer-section p{
+    color: #000;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.footer-logo{
     width: 120px;
     height: 120px;
-    
+    object-fit: cover;
 }
 
-.footer-column-1-header{
+.footer-contact-item{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.footer-column-1-content h3{
-    font-style: italic;
-    font-weight: bold;
-
-}
-.row-1{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.row-2{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.row-3{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    gap: .75rem;
+    margin-bottom: .75rem;
 }
 
-.footer-column-2 i{
-    font-size:18px;
+.footer-contact-item i{
+    font-size: 1.1rem;
+    margin-top: .25rem;
+    color: #000;
 }
-.footer-column-3-first{
-    margin-top: 42px;
+
+.footer-hours-first{
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 991.98px){
+    body{
+        padding-top: 84px;
+    }
+
+    .custom-nav-link{
+        padding: .5rem 0 !important;
+    }
 }

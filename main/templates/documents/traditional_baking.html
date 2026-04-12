@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Alchemy - Nosotros</title>
+
+    <link rel="stylesheet" href="{% static 'src/traditional_pastry.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar shadow-sm fixed-top">
+        <div class="container-fluid px-3 px-lg-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="/">
+                <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="Sweet Alchemy" class="brand-logo">
+                <span class="text-navigation">Sweet Alchemy</span>
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link active" aria-current="page" href="/nosotros/">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="/reposteria-tradicional/">Repostería tradicional</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Más vendidos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">De temporada</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Haz tu pedido</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#">Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section py-5">
+            <div class="container text-center">
+                <h2 class="h2-header mb-3">Repostería Tradicional</h2>
+                <p class="subtitle mb-0">El sabor auténtico de las recetas de toda la vida, elaboradas a mano con dedicación</p>
+            </div>
+        </section>
+
+        <section class="about-section py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="about-intro mb-4">
+                            <h1>100% Artesanal, 0% Preparados</h1>
+                            <p>En Sweet Alchemy, nos enorgullece hacer las cosas como se hacían antes. Cada producto que elaboramos es el resultado de un proceso completamente artesanal, sin atajos ni preparados industriales.</p>
+                        </div>
+
+                        <div class="about-list">
+                            <ul class="custom-check-list">
+                                <li>
+                                    <h2>Hecho a Mano</h2>
+                                    <p>Cada pieza es amasada, formada y decorada manualmente por nuestros maestros pasteleros.</p>
+                                </li>
+                                <li>
+                                    <h2>Sin Preparados</h2>
+                                    <p>No utilizamos mezclas industriales ni productos preelaborados. Todo desde cero.</p>
+                                </li>
+                                <li>
+                                    <h2>Ingredientes Naturales</h2>
+                                    <p>Solo harina, mantequilla, huevos frescos, azúcar y ingredientes de primera calidad.</p>
+                                </li>
+                                <li>
+                                    <h2>Fermentación Lenta</h2>
+                                    <p>Respetamos los tiempos de reposo y fermentación tradicionales para lograr el mejor sabor.</p>
+                                </li>
+                                <li>
+                                    <h2>Recetas Familiares</h2>
+                                    <p>Seguimos las recetas transmitidas de generación en generación, las de toda la vida.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="{% static 'img/bollos.jpg' %}" alt="Repostería tradicional" class="img-fluid about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Foo text</h2>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="step-card h-100">
+                            <div class="step-number">1</div>
+                            <p class="mb-0">Texto 1</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="step-card h-100">
+                            <div class="step-number">2</div>
+                            <p class="mb-0">Texto 2</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="step-card h-100">
+                            <div class="step-number">3</div>
+                            <p class="mb-0">Texto 3</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="step-card h-100">
+                            <div class="step-number">4</div>
+                            <p class="mb-0">Texto 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section py-5">
+            <div class="container text-center">
+                <h2 class="quote-text mb-3">Porque para mí, la repostería nunca ha sido solo hacer dulces...</h2>
+                <h2 class="quote-text mb-4">Es transformar ingredientes en la clave para la felicidad.</h2>
+                <img src="{% static 'img/postre.jpg' %}" alt="Postre artesanal" class="img-fluid quote-image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-brand d-flex align-items-center gap-3 mb-3">
+                        <img src="{% static 'img/imagen_circular_recortada.png' %}" alt="Sweet Alchemy" class="footer-logo">
+                        <h2 class="mb-0">Sweet Alchemy</h2>
+                    </div>
+
+                    <div class="footer-description">
+                        <h3>Un toque de magia en cada bocado</h3>
+                        <p>Repostería artesanal hecha con amor, dedicación y magia. Todo elaborado a mano con ingredientes naturales.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Contacto</h2>
+
+                    <div class="footer-contact-item">
+                        <i class="fa fa-location-arrow"></i>
+                        <p>Calle de la Dulzura, 123 38010, Santa Cruz de Tenerife, España</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa fa-phone"></i>
+                        <p>+34 692 66 96 80</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <p>sweetalchemybakin@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Horarios</h2>
+                    <p class="footer-hours-first">Lunes a Viernes: 8:00 - 20:00</p>
+                    <p>Sábados: 9:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

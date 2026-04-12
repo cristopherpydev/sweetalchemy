@@ -1,234 +1,480 @@
-/*FONTS used for the landing page */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Cinzel+Decorative:wght@400;700;900&display=swap');
-* {
+
+:root{
+    --cream: #F2E6D0;
+    --cream-soft: #F3F1ED;
+    --purple-dark: #534573;
+    --purple-main: #6C548C;
+    --purple-light: #9986A6;
+    --light-bg: #F2F2F2;
+    --shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+*{
     box-sizing: border-box;
 }
-body, html {
+
+html,
+body{
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
-/*Navigation section and build up */
-
-section{
-    display: flex;
-    flex-direction: column;
+body{
+    padding-top: 92px;
+    background-color: #fff;
 }
 
-
-.navigation{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    width: 100%;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    position: sticky;
-    z-index: 1000;
-    padding: 1em;
-}
-.navigation img{
-    height: 69px;
-    width: 69px;
-}
-
-.navigation a{
+a{
     text-decoration: none;
-    padding: 20px;
 }
-.navigation a:hover{
-    background-color: bisque;
+
+
+
+.custom-navbar{
+    background-color: var(--light-bg);
+    z-index: 1030;
 }
-.text-navigation {
+
+.brand-logo{
+    width: 69px;
+    height: 69px;
+    object-fit: cover;
+}
+
+.text-navigation{
     font-family: 'Cinzel Decorative', serif;
     text-shadow: 1px 1px 2px black;
+    color: #000;
+    font-size: 1.4rem;
 }
 
-/* Main header */
+.custom-nav-link{
+    color: #000;
+    padding: .75rem 1rem !important;
+    border-radius: .5rem;
+    transition: background-color .2s ease, color .2s ease;
+    font-family: 'Andada Pro', serif;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus{
+    background-color: bisque;
+    color: #000;
+}
+
+.custom-toggler{
+    border-color: rgba(0,0,0,.15);
+}
+
+.custom-toggler .navbar-toggler-icon{
+    filter: none;
+}
+
+
+
+
+
 
 .main-header{
     width: 100%;
-    background-color: #9986a6;
+    background-color: var(--purple-light);
     height: 294px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
-.main-header p{
-    font-family: 'Andada Pro', serif;
-    color: #F2E6D0;
-    font-style: italic;
-}
-.row-1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.row-1 h2{
-    font-family: 'Andada Pro', serif;
-    font-size: 64px;
-    color: #F2E6D0;
-    font-style: italic;
-}
-.star{
-    color: #F2E6D0;
-    font-size: 76px;
-}
+
 .main-header-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.subtitle{
-    font-size: 30px;
-    margin-top: -70px;
+
+.header-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .75rem;
 }
 
-/*Section 1 */
+.h2-header{
+    font-family: 'Andada Pro', serif;
+    font-size: 64px;
+    color: var(--cream);
+    font-style: italic;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.star{
+    color: var(--cream);
+    font-size: 76px;
+    margin: 0;
+    line-height: 1;
+}
+
+.subtitle{
+    font-family: 'Andada Pro', serif;
+    color: var(--cream);
+    font-style: italic;
+    font-size: 30px;
+    margin-top: -12px;
+    margin-bottom: 0;
+    text-align: center;
+}
 
 .section-1{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 20px;
-    
+    padding: 0 20px;
+    gap: 0;
 }
+
 .column-text{
     width: 600px;
-    padding: 0px 20px 0px 0px;
+    padding: 0 20px 0 0;
     font-family: 'Andada Pro', serif;
+}
 
-}
-.section-1 img{
-    width: 314px;
-    height: 274px;
-}
 .section-1 h2{
     font-size: 22px;
     font-family: 'Andada Pro', serif;
-    color: #534573;
+    color: var(--purple-dark);
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
+
+.section-1 p{
+    font-family: 'Andada Pro', serif;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section-1 img{
+    width: 314px;
+    height: 274px;
+    object-fit: cover;
+    display: block;
+}
+
+
 .section-2{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:center;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 20px;
-    
+    padding: 0 20px 20px 20px;
+    gap: 0;
 }
 
+.column-text-2{
+    width: 600px;
+    font-family: 'Andada Pro', serif;
+    padding: 0 0 20px 20px;
+    text-align: right;
+}
+
+.section-2 p{
+    font-family: 'Andada Pro', serif;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
 
 .section-2 img{
     width: 314px;
     height: 274px;
+    object-fit: cover;
+    display: block;
 }
-.column-text-2{
-    width: 600px;
-    font-family: 'Andada Pro', serif;
-    padding: 0px 0px 20px 20px;
-    text-align: right;
-
-}
-/* SECTION 3*/
 
 .section-3{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 0 20px;
 }
 
 .section-3 h2{
     font-size: 32px;
     font-family: 'Andada Pro', serif;
-    color: #534573;
+    color: var(--purple-dark);
     font-style: italic;
+    text-align: center;
+    margin: 0 0 8px 0;
 }
+
 .section-3 img{
     width: 628px;
     height: 418px;
+    object-fit: cover;
     margin-bottom: 40px;
+    margin-top: 12px;
+    display: block;
 }
 
-/*Footer*/
-footer{
-    background-color: #F2E6D0;
-    height: 100%;
+
+
+.footer-section{
+    background-color: var(--cream);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 3rem 0;
 }
-.three-columns-wrapper {
+
+.three-columns-wrapper{
     display: flex;
     width: 100%;
-    max-width: 1200px;  
+    max-width: 1200px;
+}
 
-}
-.three-columns-wrapper p{
-    font-style: italic;
-    font-weight: bold;
-}
-.three-columns-wrapper > div {
-    flex: 1;             
+.three-columns-wrapper > div{
+    flex: 1;
     padding: 20px;
 }
-.three-columns-wrapper p{
-    color: black;
-}
-.three-columns-wrapper h2{
-    color: #6C548C;
+
+.footer-section h2{
+    color: var(--purple-main);
     font-family: 'Andada Pro', serif;
     font-size: 32px;
     font-style: italic;
 }
-.footer-column-1 img{
-    width: 120px;
-    height: 120px;
-    
+
+.footer-section h3{
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
 }
 
+.footer-section p{
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.footer-logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.footer-brand,
 .footer-column-1-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
+
 .footer-column-1-content h3{
-    font-style: italic;
-    font-weight: bold;
-
-}
-.row-1{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.row-2{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.row-3{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.footer-column-2 i{
-    font-size:18px;
+.footer-contact-item,
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: .75rem;
 }
 
+.footer-contact-item i,
+.footer-row i{
+    font-size: 18px;
+    margin-top: .25rem;
+    color: #000;
+}
+
+.footer-hours-first,
 .footer-column-3-first{
     margin-top: 42px;
+}
+
+
+
+@media (max-width: 991.98px){
+    body{
+        padding-top: 84px;
+    }
+
+    .custom-nav-link{
+        padding: .5rem 0 !important;
+    }
+
+    .main-header{
+        height: auto;
+        padding: 3.5rem 1rem;
+    }
+
+    .h2-header{
+        font-size: 48px;
+    }
+
+    .star{
+        font-size: 52px;
+    }
+
+    .subtitle{
+        font-size: 24px;
+        margin-top: .5rem;
+    }
+
+    .section-1,
+    .section-2{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .column-text,
+    .column-text-2{
+        width: 100%;
+        max-width: 700px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .section-1 img,
+    .section-2 img{
+        width: 314px;
+        height: 274px;
+    }
+
+    .section-3 img{
+        width: 100%;
+        max-width: 628px;
+        height: auto;
+    }
+
+    .three-columns-wrapper{
+        flex-direction: column;
+    }
+
+    .footer-hours-first,
+    .footer-column-3-first{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767.98px){
+    body{
+        padding-top: 80px;
+    }
+
+    .brand-logo{
+        width: 58px;
+        height: 58px;
+    }
+
+    .text-navigation{
+        font-size: 1.15rem;
+    }
+
+    .header-row{
+        gap: .5rem;
+    }
+
+    .h2-header{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .star{
+        font-size: 36px;
+    }
+
+    .subtitle{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-1 img,
+    .section-2 img{
+        width: 100%;
+        max-width: 314px;
+        height: auto;
+    }
+
+    .section-3 h2{
+        font-size: 24px;
+    }
+
+    .footer-logo{
+        width: 90px;
+        height: 90px;
+    }
+
+    .footer-section h2{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .brand-logo{
+        width: 52px;
+        height: 52px;
+    }
+
+    .text-navigation{
+        font-size: 1rem;
+    }
+
+    .h2-header{
+        font-size: 28px;
+    }
+
+    .star{
+        font-size: 28px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+
+    .section-1 h2{
+        font-size: 20px;
+    }
+
+    .section-1 p,
+    .section-2 p{
+        font-size: .98rem;
+    }
+
+    .section-3 h2{
+        font-size: 20px;
+    }
+
+    .footer-logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-section h2{
+        font-size: 24px;
+    }
+
+    .footer-section p{
+        font-size: .95rem;
+    }
 }
